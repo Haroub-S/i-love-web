@@ -7,9 +7,6 @@
             return response.json();
         })
         .then((data) => {
-            // Handle the JSON data
-            console.log(data);
-
             data.forEach((article) => {
                 buildArticle(article);
             });
@@ -80,4 +77,4 @@ function addEvents() {
     }
 }
 
-setTimeout(addEvents, 100);
+setTimeout(addEvents, 1000);
