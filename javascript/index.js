@@ -7,7 +7,9 @@
             return response.json();
         })
         .then((data) => {
-            data.forEach((article) => {
+           let sortedData = data.sort((a, b) => b.sort - a.sort);
+
+            sortedData.forEach((article) => {
                 buildArticle(article);
             });
         })

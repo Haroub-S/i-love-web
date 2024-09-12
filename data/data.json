@@ -1,5 +1,6 @@
 [
   {
+    "sort": 3,
     "date": "2024-09-12",
     "accordion": [
       {
@@ -31,37 +32,60 @@
         "accordionTitle": "3 Studie vragen.",
         "accordionItems": [
           {
-            "item": "Waarom is het handing om @media-quesries te gebruiken?"
+            "item": "Wat is het verschil tussen de min-width en max-width eigenschappen in mediaquery's, en hoe kunnen ze worden gecombineerd?"
           },
           {
-            "item": "Moet je media queries nog gebruiken als je flexbox gebruikt?"
+            "item": "Hoe kun je specifieke schermgroottes of apparaattype targeten met CSS-mediaquery's?"
           },
           {
-            "item": "Item 1.2"
+            "item": "Wat is het doel van CSS-mediaquery's en hoe helpen ze bij het creëren van responsieve webontwerpen?"
           }
         ]
       }
     ]
   },
   {
-    "date": "2024-09-08",
+    "sort" : 2,
+    "date": "2024-09-11",
     "accordion": [
       {
-        "accordionTitle": "Section 1",
+        "accordionTitle": "Wat ik heb gedaan?",
         "accordionItems": [
           {
-            "item": "Item 1.1"
-          },
-          {
-            "item": "Item 1.3"
+            "item": "Ik heb CSS Grid oefeningen gedaan in codepen.io"
           }
         ]
       },
       {
-        "accordionTitle": "Section 3",
+        "accordionTitle": "Wat ga ik doen?",
+        "accordionItems": [
+          {
+            "item": "Ik ga verder oefnen met css grid thuis"
+          }
+        ]
+      },
+      {
+        "accordionTitle": "3 studievragen",
+        "accordionItems": [
+          {
+            "item": "Wat is CSS Grid en hoe verschilt het van andere lay-outmethoden zoals Flexbox?"
+          },
+          {
+            "item": "Hoe definieer je rijen en kolommen in een CSS Grid-container en wat is het verschil tussen de eigenschappen grid-template-rows en grid-template-columns?"
+          },
+          {
+            "item": "Hoe kun je CSS Grid gebruiken om een lay-out te maken die flexibel blijft bij het schalen van het scherm?"
+          }
+        ]
+      },
+      {
+        "accordionTitle": "linkjes",
         "accordionItems": [
           {
             "item": "Item 3.1"
+          },
+          {
+            "item": "Item 3.2"
           },
           {
             "item": "Item 3.2"
@@ -71,108 +95,75 @@
     ]
   },
   {
-    "date": "2024-09-1",
+    "sort" : 1,
+    "date": "2024-09-10",
     "accordion": [
       {
-        "accordionTitle": "Section 2",
+        "accordionTitle": "Wat ik heb gedaan?",
         "accordionItems": [
           {
-            "item": "Item 2.3"
+            "item": "bezig met I ❤️ Web website klaarzetten"
           },
           {
-            "item": "Item 2.4"
+            "item": "Oefenen met javascript dom manipulatie"
           }
         ]
       },
       {
-        "accordionTitle": "Section 4",
+        "accordionTitle": "Wat ga ik doen?",
         "accordionItems": [
           {
-            "item": "Item 4.1"
+            "item": "Schets maken voor mijn I ❤️ Web Website"
           },
           {
-            "item": "Item 4.2"
+            "item": "Website op GitHub zetten"
+          }
+        ]
+      },
+      {
+        "accordionTitle": "Studievragen",
+        "accordionItems": [
+          {
+            "item": "Waarom is het belangrijk dat je aan dev life cycle moet aanhouden?"
           }
         ]
       }
     ]
   },
   {
-    "date": "2024-09-15",
+    "sort" : 0,
+    "date": "2024-09-09",
     "accordion": [
       {
-        "accordionTitle": "Section 1",
+        "accordionTitle": "Wat ik heb gedaan?",
         "accordionItems": [
           {
-            "item": "Item 1.4"
+            "item": "CSS bug fixes in mijn visitekaartje website"
           },
           {
-            "item": "Item 1.5"
+            "item": "leren objecten in javascript"
           }
         ]
       },
       {
-        "accordionTitle": "Section 5",
+        "accordionTitle": "Wat ga ik doen?",
         "accordionItems": [
           {
-            "item": "Item 5.1"
+            "item": "verder met javascript objecten leren."
           },
           {
-            "item": "Item 5.2"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "date": "2024-09-16",
-    "accordion": [
-      {
-        "accordionTitle": "Section 3",
-        "accordionItems": [
-          {
-            "item": "Item 3.3"
-          },
-          {
-            "item": "Item 3.4"
+            "item": "html styles aanpassen met behulp va javascript."
           }
         ]
       },
       {
-        "accordionTitle": "Section 6",
+        "accordionTitle": "Studie Vragen",
         "accordionItems": [
           {
-            "item": "Item 6.1"
+            "item": "Wat is javascript?"
           },
           {
-            "item": "Item 6.2"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "date": "2024-09-17",
-    "accordion": [
-      {
-        "accordionTitle": "Section 4",
-        "accordionItems": [
-          {
-            "item": "Item 4.3"
-          },
-          {
-            "item": "Item 4.4"
-          }
-        ]
-      },
-      {
-        "accordionTitle": "Section 7",
-        "accordionItems": [
-          {
-            "item": "Item 7.1"
-          },
-          {
-            "item": "Item 7.2"
+            "item": "Wat kun je met javascript?"
           }
         ]
       }
