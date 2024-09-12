@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    height: 600px;
+    position: relative;
+    background-color: rgba(49, 49, 55, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    letter-spacing: .2rem;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -5;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+span[aria-label="love-span"] {
+    color: rgb(83, 52, 52);
+}
+
+.articles-sect {
+    width: 100%;
+    height: fit-content;
+    background-color: rgba(49, 49, 55, 0.4);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+article {
+    width: 20vw;
+    height: 40vh;
+    align-items: center;
+    background: rgb(227, 227, 227);
+    transform: translateY(-15vh);
+    padding: 2rem;
+    margin-bottom: 55px;
+    -webkit-box-shadow: 2px 13px 25px 1px rgba(0, 0, 0, 0.31);
+    -moz-box-shadow: 2px 13px 25px 1px rgba(0, 0, 0, 0.31);
+    box-shadow: 2px 13px 25px 1px rgba(0, 0, 0, 0.31);
+    overflow: scroll;
+}
+article > h3 {
+    text-align: center;
+    padding-bottom: 5px;
+    padding-top: 0;
+}
+
+
+.accordion{
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    /*border-radius: 12px;*/
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.panel.open{
+    max-height: 0;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: #cccccc;
+    display: none;
+    overflow: hidden;
+    transition: max-height 1s ease-in-out;
+}
+
+ul {
+    list-style-position: outside;
+}
+
+li {
+    padding: .5em;
+    font-family: system-ui;
+}
+
+
+
+
+
+
