@@ -79,4 +79,6 @@ function addEvents() {
     }
 }
 
+
+// timeout 1 second waiting for Dom to finish loading the page
 setTimeout(addEvents, 1000);
