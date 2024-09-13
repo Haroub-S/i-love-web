@@ -1,24 +1,185 @@
-(function displayData() {
-    fetch("../data/data.json")
-        .then((response) => {
-            if (!response.ok) {
-                throw new Error("Network response was not ok " + response.statusText);
+let dataArray = [
+    {
+        "sort": 3,
+        "date": "2024-09-12",
+        "accordion": [
+            {
+                "accordionTitle": "Wat ik heb gedaan?",
+                "accordionItems": [
+                    {
+                        "item": "schetsen gemaakt voor de squad page?"
+                    },
+                    {
+                        "item": "overleggen met mijn team over de squad page"
+                    },
+                    {
+                        "item": "Bezig met javascript DOM manipulatie."
+                    }
+                ]
+            },
+            {
+                "accordionTitle": "Wat ga ik doen?",
+                "accordionItems": [
+                    {
+                        "item": "Ik ga verder bezig met @media-Queries css"
+                    },
+                    {
+                        "item": "Ook mijn I love web online zetten in Github pages"
+                    }
+                ]
+            },
+            {
+                "accordionTitle": "3 Studie vragen.",
+                "accordionItems": [
+                    {
+                        "item": "Wat is het verschil tussen de min-width en max-width eigenschappen in mediaquery's, en hoe kunnen ze worden gecombineerd?"
+                    },
+                    {
+                        "item": "Hoe kun je specifieke schermgroottes of apparaattype targeten met CSS-mediaquery's?"
+                    },
+                    {
+                        "item": "Wat is het doel van CSS-mediaquery's en hoe helpen ze bij het creëren van responsieve webontwerpen?"
+                    }
+                ]
             }
-            return response.json();
-        })
-        .then((data) => {
-           let sortedData = data.sort((a, b) => b.sort - a.sort);
+        ]
+    },
+    {
+        "sort": 2,
+        "date": "2024-09-11",
+        "accordion": [
+            {
+                "accordionTitle": "Wat ik heb gedaan?",
+                "accordionItems": [
+                    {
+                        "item": "Ik heb CSS Grid oefeningen gedaan in codepen.io"
+                    }
+                ]
+            },
+            {
+                "accordionTitle": "Wat ga ik doen?",
+                "accordionItems": [
+                    {
+                        "item": "Ik ga verder oefnen met css grid thuis"
+                    }
+                ]
+            },
+            {
+                "accordionTitle": "3 studievragen",
+                "accordionItems": [
+                    {
+                        "item": "Wat is CSS Grid en hoe verschilt het van andere lay-outmethoden zoals Flexbox?"
+                    },
+                    {
+                        "item": "Hoe definieer je rijen en kolommen in een CSS Grid-container en wat is het verschil tussen de eigenschappen grid-template-rows en grid-template-columns?"
+                    },
+                    {
+                        "item": "Hoe kun je CSS Grid gebruiken om een lay-out te maken die flexibel blijft bij het schalen van het scherm?"
+                    }
+                ]
+            },
+            {
+                "accordionTitle": "linkjes",
+                "accordionItems": [
+                    {
+                        "item": "Item 3.1"
+                    },
+                    {
+                        "item": "Item 3.2"
+                    },
+                    {
+                        "item": "Item 3.2"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "sort": 1,
+        "date": "2024-09-10",
+        "accordion": [
+            {
+                "accordionTitle": "Wat ik heb gedaan?",
+                "accordionItems": [
+                    {
+                        "item": "bezig met I ❤️ Web website klaarzetten"
+                    },
+                    {
+                        "item": "Oefenen met javascript dom manipulatie"
+                    }
+                ]
+            },
+            {
+                "accordionTitle": "Wat ga ik doen?",
+                "accordionItems": [
+                    {
+                        "item": "Schets maken voor mijn I ❤️ Web Website"
+                    },
+                    {
+                        "item": "Website op GitHub zetten"
+                    }
+                ]
+            },
+            {
+                "accordionTitle": "Studievragen",
+                "accordionItems": [
+                    {
+                        "item": "Waarom is het belangrijk dat je aan dev life cycle moet aanhouden?"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "sort": 0,
+        "date": "2024-09-09",
+        "accordion": [
+            {
+                "accordionTitle": "Wat ik heb gedaan?",
+                "accordionItems": [
+                    {
+                        "item": "CSS bug fixes in mijn visitekaartje website"
+                    },
+                    {
+                        "item": "leren objecten in javascript"
+                    }
+                ]
+            },
+            {
+                "accordionTitle": "Wat ga ik doen?",
+                "accordionItems": [
+                    {
+                        "item": "verder met javascript objecten leren."
+                    },
+                    {
+                        "item": "html styles aanpassen met behulp va javascript."
+                    }
+                ]
+            },
+            {
+                "accordionTitle": "Studie Vragen",
+                "accordionItems": [
+                    {
+                        "item": "Wat is javascript?"
+                    },
+                    {
+                        "item": "Wat kun je met javascript?"
+                    }
+                ]
+            }
+        ]
+    }
+];
 
-            sortedData.forEach((article) => {
-                buildArticle(article);
-            });
-        })
-        .catch((error) => {
-            console.error(
-                "There has been a problem with your fetch operation: ",
-                error
-            );
-        });
+(function displayData() {
+    let sortedData = dataArray.sort((a, b) => b.sort - a.sort);
+
+
+    sortedData.forEach((article) => {
+        buildArticle(article);
+    });
+
+    console.log(sortedData);
 })();
 
 function buildArticle(data) {
